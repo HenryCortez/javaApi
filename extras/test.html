@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test- Json</title>
+    <script>
+        //String
+        cadena = "Hola muchachos"
+        //Number
+        numero = 10
+        //Boolean
+        booleano = true
+        console.log(booleano)
+        //Array
+        arreglo = [1,2,3,4,5]
+        console.log(arreglo[0])
+        //Object
+        objeto = {nombre: "Juan", apellido: "perez", edad: 30}
+        console.log(objeto.edad)
+
+        //JSON
+        json = {
+            "nombre": "David",
+            "apellido": "Ayme",
+            "casado" : false,
+            "edad": 20,
+            "hijos": [{"nombre": "Juan", "edad": 10}, {"nombre": "Maria", "edad": 5}]
+        }
+        console.log(json.edad + " años" + "\n Nombre" + json.nombre + "Hijos " + json.hijos[0].nombre + " " + json.hijos[1].nombre)
+
+        //Convertir un string Json a un objeto Javascript
+        var cadena = '{"nombre" : "david", "apellido": "ayme", "edad": 20}'
+        console.log(cadena)
+        var j1 = JSON.parse(cadena)
+        console.log(j1.nombre)
+        //Json Stringify permite convertir un objeto a un string Json
+        var objeto = {nombre: "David", apellido: "Ayme", edad: 20}
+        console.log(objeto)
+        var cadena = JSON.stringify(objeto)
+        console.log(cadena)
+
+        //convertir un array a un string Json
+        var arreglo = [1,2,3,4,5]
+        console.log(arreglo)
+        var cadena = JSON.stringify(arreglo)
+        console.log(cadena)
+    </script>
+</head>
+<body>
+    <h1>Hola</h1>
+</body>
+</html>

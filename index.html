@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="controllers/miajax.js"></script>
+</head>
+
+<body>
+    <article>
+        <table id="tabla">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Direccion</th>
+                    <th>Telefono</th>
+                    <th><button id="nuevo">new</button></th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </article>
+    <article>
+        <form id="guardar">
+            <label for="cedula">ID:</label><br>
+            <input type="text" id="id" name="id"><br>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido"><br>
+            <label for="direccion">Direccion:</label><br>
+            <input type="text" id="direccion" name="direccion"><br>
+            <label for="telefono">Telefono:</label><br>
+            <input type="text" id="telefono" name="telefono"><br>
+            <input type="submit" value="Crear Estudiante">
+        </form>
+    </article>
+
+    <article>
+        <form id="editar">
+            <label for="id">ID:</label><br>
+            <input type="text" id="id" name="id"><br>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido"><br>
+            <label for="direccion">Direccion:</label><br>
+            <input type="text" id="direccion" name="direccion"><br>
+            <label for="telefono">Telefono:</label><br>
+            <input type="text" id="telefono" name="telefono"><br>
+            <input type="submit" value="Editar">
+        </form>
+    </article>
+   <article>
+    <form id="eliminar">
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" name="id"><br>
+        <input type="submit" value="Eliminar">
+    </form>
+   </article>
+
+    
+   
+</body>
+<style>
+    #guardar, #editar, #eliminar {
+      display: none;
+    }
+  </style>
+</html>

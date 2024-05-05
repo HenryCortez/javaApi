@@ -1,0 +1,9 @@
+{
+    "Nombre":"Henry",
+    "Apellido":"Cortez",
+    "Edad": 30,
+    "estudios":{
+        "primaria": "PIO",
+        "secundaria": "El PIO"
+    }
+}
