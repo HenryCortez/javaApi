@@ -100,3 +100,18 @@ public class consumerApi {
         }.getType());
         return estudiantes;
     }
+
+
+
+    private void buscar() throws UnirestException{
+        String id = jTextField1.getText();
+        List<Student> students = api.searchStudentsByName(id);
+        this.model.setNumRows(0);
+        students.forEach(student -> 
+        {this.model.addRow(new Object[]{student.getId(), 
+                student.getNombre(), 
+                student.getApellido(),
+                student.getDireccion(), 
+                student.getTelefono()});
+        });
+    }
