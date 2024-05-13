@@ -15,7 +15,7 @@ switch ($opc) {
         }
         break;  
     case 'POST':
-        echo json_encode(guardar::guardar());
+        echo json_encode(guardar::guardar2());
         break;
     case 'DELETE':
         echo json_encode(borrar::borrar());
