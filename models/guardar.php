@@ -3,7 +3,6 @@
 include_once 'conexion.php';
 class guardar{
     public static function guardar(){
-        $data = json_decode(file_get_contents('php://input'));
         $con = new conexion();
         $conexion = $con->conectar();
         $cedula = $_POST['id'];
@@ -28,8 +27,8 @@ class guardar{
         $cedula = $data->id;
         $nombre = $data->nombre;
         $apellido = $data->apellido;
-        $telefono = $data->direccion;
-        $direccion = $data->telefono;
+        $telefono = $data->telefono;
+        $direccion = $data->direccion;
         
         $sql = "INSERT INTO estudiantes (id, nombre, apellido, direccion, telefono) VALUES ('$cedula', '$nombre', '$apellido', '$direccion', '$telefono')";
         
